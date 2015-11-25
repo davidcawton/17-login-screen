@@ -1,0 +1,59 @@
+// background pictures
+
+.top-bg {
+  height: 300px;
+  background: url(/bg-login-top.png);
+}
+
+body {
+  background: url(/bg-login.png);
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo-image {
+  display: flex;
+  margin: auto;
+  padding: 175px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.login-form {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.form {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.form-text li {
+  margin: 20px;
+  color: #eee;
+}
+
+.form-login li {
+  margin: 20px;
+}
+
+.login-user {
+  border-radius: 10%;
+  border: none;
+}
+
+.login-psw {
+  border-radius: 10%;
+  border: none;
+}
+
+button {
+  display: flex;
+  margin: auto;
+  background-color: #7bc80d;
+  color: #eee;
+  border: 1px #eee solid;
+}

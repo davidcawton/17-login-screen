@@ -4,20 +4,26 @@
   <meta charset="utf-8">
   <title>My Backbone Project</title>
   <link rel="stylesheet" href="/app.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <img src="bg-login-top.png" alt="#" class="bg-top">
-  <img src="bg-login.png" alt="#" class="bg-bottom">
-  <div id="outlet"></div>
-  <img src="treemoLabs-logo.png" alt="logo" class="logo-image" />
-  <div class="form">
-    <p class="username">Username</p>
-    <p class="password">Password</p>
+  <div class="top-bg">
+    <img src="treemoLabs-logo.png" alt="logo" class="logo-image" />
+  </div>
+  <div id="outlet">
+  <div class="login-screen">
     <form action="#" class="login-form">
-      <input type="text" class="login login-user">
-      <input type="text" class="login login-psw">
-      <button class="submit">Sign In</button>
+      <ul class="form form-text">
+        <li class="form-text__username">Username</li>
+        <li class="form-text__password">Password</li>
+      </ul>
+      <ul class="form form-login">
+        <li> <input type="text" class="login-user"></li>
+        <li> <input type="text" class="login-psw"></li>
+      </ul>
     </form>
+      <button class="submit">Sign In</button>
+  </div>
   </div>
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
