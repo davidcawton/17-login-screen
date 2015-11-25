@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Backbone Project</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <img src="bg-login-top.png" alt="#" class="bg-top">
+  <img src="bg-login.png" alt="#" class="bg-bottom">
+  <div id="outlet"></div>
+  <img src="treemoLabs-logo.png" alt="logo" class="logo-image" />
+  <div class="form">
+    <p class="username">Username</p>
+    <p class="password">Password</p>
+    <form action="#" class="login-form">
+      <input type="text" class="login login-user">
+      <input type="text" class="login login-psw">
+      <button class="submit">Sign In</button>
+    </form>
+  </div>
+  <script src="/vendor.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8"></script>
+  <script>
+    require(['app'], function(app) {
+      app();
+    });
+  </script>
+</body>
+</html>
