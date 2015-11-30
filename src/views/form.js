@@ -1,6 +1,6 @@
 //backbone view //
 
-import User from '..models/user-input';
+import User from '../models/user-input';
 
 export default Backbone.View.extend({
 
@@ -14,7 +14,7 @@ export default Backbone.View.extend({
       var errorMsg = submit.getValidationErrors();
 
       if (errorMsg) {
-        alert(errorMsg);
+        window.alert(errorMsg);
       } else {
         window.location = 'http://www.theironyard.com';
       }

@@ -19,7 +19,7 @@ export default Backbone.Model.extend({
       return cary;
     }, false);
 
-    var passCorrect = this.user.reduce(function(cary, over) {
+    var passCorrect = this.users.reduce(function(cary, over) {
       if (over.password === password) {
         return true;
       }
@@ -27,19 +27,19 @@ export default Backbone.Model.extend({
       return cary;
     }, false);
 
-    if (username === '') {
+    if (userCorrect === '') {
       return 'Please enter an email before loggin in.';
     }
 
-    if (!username) {
+    if (!userCorrect) {
       return 'Email is not correct.';
     }
 
-    if (password === '') {
+    if (passCorrect === '') {
       return 'Please enter a password to continue.';
     }
 
-    if (!password) {
+    if (!passCorrect) {
       return 'Password does not match email address.';
     }
   },
