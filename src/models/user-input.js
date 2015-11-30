@@ -20,7 +20,7 @@ export default Backbone.Model.extend({
     }, false);
 
     var passCorrect = this.users.reduce(function(cary, over) {
-      if (over.password === password) {
+      if (over.user === username && over.password === password) {
         return true;
       }
 
